@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite parallel="tests" name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
+  <test thread-count="5" parallel="tests" name="LoginLogoutTest(failed)">
+    <parameter name="browser" value="chrome"/>
+    <classes>
+      <class name="com.testng.selenium.v2.LoginLogoutTest">
+        <methods>
+          <include name="loginTest"/>
+          <include name="logoutTest"/>
+          <include name="setup"/>
+        </methods>
+      </class> <!-- com.testng.selenium.v2.LoginLogoutTest -->
+    </classes>
+  </test> <!-- LoginLogoutTest(failed) -->
+</suite> <!-- Failed suite [Suite] -->
