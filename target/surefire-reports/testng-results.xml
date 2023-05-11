@@ -2,24 +2,24 @@
 <testng-results ignored="0" total="3" passed="3" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2023-05-11T16:40:41 IST" name="com.testng.selenium.v2.LoginLogoutTest" finished-at="2023-05-11T16:41:14 IST" duration-ms="32688">
+  <suite started-at="2023-05-11T17:16:44 IST" name="com.testng.selenium.v2.LoginLogoutTest" finished-at="2023-05-11T17:17:16 IST" duration-ms="31743">
     <groups>
     </groups>
-    <test started-at="2023-05-11T16:40:41 IST" name="Command line test" finished-at="2023-05-11T16:41:14 IST" duration-ms="32688">
+    <test started-at="2023-05-11T17:16:44 IST" name="Command line test" finished-at="2023-05-11T17:17:16 IST" duration-ms="31743">
       <class name="com.testng.selenium.v2.LoginLogoutTest">
-        <test-method is-config="true" signature="setup()[pri:0, instance:com.testng.selenium.v2.LoginLogoutTest@29f69090]" started-at="2023-05-11T16:40:41 IST" name="setup" finished-at="2023-05-11T16:40:44 IST" duration-ms="3294" status="PASS">
+        <test-method is-config="true" signature="setup()[pri:0, instance:com.testng.selenium.v2.LoginLogoutTest@29f69090]" started-at="2023-05-11T17:16:44 IST" name="setup" finished-at="2023-05-11T17:16:56 IST" duration-ms="12231" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="loginTest()[pri:1, instance:com.testng.selenium.v2.LoginLogoutTest@29f69090]" started-at="2023-05-11T16:40:45 IST" name="loginTest" finished-at="2023-05-11T16:40:50 IST" duration-ms="5284" status="PASS">
+        <test-method signature="loginTest()[pri:1, instance:com.testng.selenium.v2.LoginLogoutTest@29f69090]" started-at="2023-05-11T17:16:56 IST" name="loginTest" finished-at="2023-05-11T17:17:02 IST" duration-ms="5555" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- loginTest -->
-        <test-method signature="logoutTest()[pri:2, instance:com.testng.selenium.v2.LoginLogoutTest@29f69090]" started-at="2023-05-11T16:40:50 IST" name="logoutTest" finished-at="2023-05-11T16:40:55 IST" duration-ms="5071" status="PASS">
+        <test-method signature="logoutTest()[pri:2, instance:com.testng.selenium.v2.LoginLogoutTest@29f69090]" started-at="2023-05-11T17:17:02 IST" name="logoutTest" finished-at="2023-05-11T17:17:07 IST" duration-ms="5173" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- logoutTest -->
-        <test-method signature="userregister()[pri:3, instance:com.testng.selenium.v2.LoginLogoutTest@29f69090]" started-at="2023-05-11T16:40:55 IST" name="userregister" finished-at="2023-05-11T16:41:14 IST" duration-ms="18992" status="PASS">
+        <test-method signature="userregister()[pri:3, instance:com.testng.selenium.v2.LoginLogoutTest@29f69090]" started-at="2023-05-11T17:17:07 IST" name="userregister" finished-at="2023-05-11T17:17:16 IST" duration-ms="8709" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- userregister -->

@@ -18,7 +18,7 @@ public class LoginLogoutTest {
     @BeforeTest
     @Parameters({ "browser" })
     public void setup() {
-        System.setProperty("webdriver.chrome.driver", "src\\main\\driver\\chromedriver.exe");
+        System.setProperty("webdriver.chrome.driver", "src/main/driver/chromedriver.exe");
        // driver = new ChromeDriver();
         ChromeOptions options = new ChromeOptions();
         options.addArguments("--remote-allow-origins=*");
@@ -34,9 +34,7 @@ public class LoginLogoutTest {
         Thread.sleep(5000);
 
        driver.findElement(By.xpath("/html/body/div/form/button")).click();
-      //  String expectedTitle = "Welcome to Instagram.com";
-      //  String actualTitle = driver.getTitle();
-      //  Assert.assertEquals(actualTitle, expectedTitle);
+      
     }
 
     @Test(priority = 2)
@@ -53,54 +51,9 @@ public class LoginLogoutTest {
     driver.get("https://www.instagram.com/accounts/emailsignup/");
     Thread.sleep(5000);
         driver.findElement(By.name("emailOrPhone")).sendKeys("imkshitij9.58@gmail.com");
-   //  driver.findElement(By.xpath("/html/body/div[2]/div/div/div[1]/div/div/div/div[1]/section/main/div/div/div[1]/div[2]/form/div[3]/div/label/span")).click();
-
       driver.findElement(By.name("fullName")).sendKeys("Kshitij");
-     // driver.findElement(By.xpath("/html/body/div[2]/div/div/div[1]/div/div/div/div[1]/section/main/div/div/div[1]/div[2]/form/div[4]/div/label/input")).click();
-
-      driver.findElement(By.name("username")).sendKeys("kshitij958");
-    //  driver.findElement(By.xpath("/html/body/div[2]/div/div/div[1]/div/div/div/div[1]/section/main/div/div/div[1]/div[2]/form/div[5]/div/label/input")).click();
-
-        
+      driver.findElement(By.name("username")).sendKeys("kshitij958");  
        driver.findElement(By.name("password")).sendKeys("abcde");
-    //   driver.findElement(By.xpath("/html/body/div[2]/div/div/div[1]/div/div/div/div[1]/section/main/div/div/div[1]/div[2]/form/div[6]/div/label/input")).click();
-
-
-
-        // Fill out the registration form fields
-      //  WebElement emailField = driver.findElement(By.name("Mobile Number or Email"));
-   //     emailField.sendKeys("imkshitij9.58@gmail.com");
-      //  WebElement fullnameField = driver.findElement(By.name("Fullname"));
-      //  fullnameField.sendKeys("Kshitij");
-      //  WebElement usernameField = driver.findElement(By.name("Username"));
-     //   usernameField.sendKeys("kshitij9.58");
-     //   WebElement passwordField = driver.findElement(By.name("Password"));
-     //   passwordField.sendKeys("12345678");
-
-        // Submit the registration form
-       // WebElement registerButton = driver.findElement(By.xpath("/html/body/div[2]/div/div/div[1]/div/div/div/div[1]/section/main/div/div/div[1]/div[2]/form/div[7]/div/button"));
-      //  registerButton.click();
-
-        // Check if registration was successful
-   //     if (driver.getCurrentUrl().equals("https://www.instagram.com/dashboard")) {
-   //         System.out.println("Registration successful!");
-   //     } else {
-    //        System.out.println("Registration failed!");
-       // }
-
-        // Close the WebDriver
-        
-
    }
+   
     }
-
-
-
-    
-     //   String expectedTitle = "Login | Instagram.com";
-     //   String actualTitle = driver.getTitle();
-     //   Assert.assertEquals(actualTitle, expectedTitle);
-    
-
-
-
