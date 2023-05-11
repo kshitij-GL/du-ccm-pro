@@ -8,6 +8,7 @@
           <include name="loginTest"/>
           <include name="logoutTest"/>
           <include name="setup"/>
+          <include name="userregister"/>
         </methods>
       </class> <!-- com.testng.selenium.v2.LoginLogoutTest -->
     </classes>

@@ -2,13 +2,15 @@ package com.testng.selenium.v2;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Parameters;
 import org.testng.annotations.Test;
 import org.openqa.selenium.chrome.ChromeOptions;
 
 public class LoginLogoutTest {
-    WebDriver driver;
+    private static final String timeout = null;
+	WebDriver driver;
     String baseUrl = "http://localhost/loginpage/";
     String username = "kshitij";
     String password = "abcd";
@@ -16,7 +18,7 @@ public class LoginLogoutTest {
     @BeforeTest
     @Parameters({ "browser" })
     public void setup() {
-        System.setProperty("webdriver.chrome.driver", "C:\\Users\\kshitij.1\\Downloads\\chromedriver_win32 (1)\\chromedriver.exe");
+        System.setProperty("webdriver.chrome.driver", "src\\main\\driver\\chromedriver.exe");
        // driver = new ChromeDriver();
         ChromeOptions options = new ChromeOptions();
         options.addArguments("--remote-allow-origins=*");
@@ -44,23 +46,24 @@ public class LoginLogoutTest {
         driver.findElement(By.xpath("/html/body/div/div/div/a")).click();
     }
         
-  //  @AfterTest()
-  //  Run | Debug
- //  public void userregister() throws InterruptedException {
+   @Test(priority=3)
+  // Run | Debug
+ public void userregister() throws InterruptedException {
     	
-    //driver.get("https://www.instagram.com/accounts/emailsignup/");
-    //    driver.findElement(By.name("Mobile Number or Email")).sendKeys("imkshitij9.58@gmail.com");
-     //driver.findElement(By.xpath("/html/body/div[2]/div/div/div[1]/div/div/div/div[1]/section/main/div/div/div[1]/div[2]/form/div[3]/div/label/span")).click();
+    driver.get("https://www.instagram.com/accounts/emailsignup/");
+    Thread.sleep(5000);
+        driver.findElement(By.name("emailOrPhone")).sendKeys("imkshitij9.58@gmail.com");
+   //  driver.findElement(By.xpath("/html/body/div[2]/div/div/div[1]/div/div/div/div[1]/section/main/div/div/div[1]/div[2]/form/div[3]/div/label/span")).click();
 
-    //  driver.findElement(By.name("Fullname")).sendKeys("Kshitij");
-      //driver.findElement(By.xpath("/html/body/div[2]/div/div/div[1]/div/div/div/div[1]/section/main/div/div/div[1]/div[2]/form/div[4]/div/label/input")).click();
+      driver.findElement(By.name("fullName")).sendKeys("Kshitij");
+     // driver.findElement(By.xpath("/html/body/div[2]/div/div/div[1]/div/div/div/div[1]/section/main/div/div/div[1]/div[2]/form/div[4]/div/label/input")).click();
 
-    //    driver.findElement(By.name("Username")).sendKeys("kshitij958");
-     // driver.findElement(By.xpath("/html/body/div[2]/div/div/div[1]/div/div/div/div[1]/section/main/div/div/div[1]/div[2]/form/div[5]/div/label/input")).click();
+      driver.findElement(By.name("username")).sendKeys("kshitij958");
+    //  driver.findElement(By.xpath("/html/body/div[2]/div/div/div[1]/div/div/div/div[1]/section/main/div/div/div[1]/div[2]/form/div[5]/div/label/input")).click();
 
         
-    //   driver.findElement(By.name("Password")).sendKeys("abcde");
-      // driver.findElement(By.xpath("/html/body/div[2]/div/div/div[1]/div/div/div/div[1]/section/main/div/div/div[1]/div[2]/form/div[6]/div/label/input")).click();
+       driver.findElement(By.name("password")).sendKeys("abcde");
+    //   driver.findElement(By.xpath("/html/body/div[2]/div/div/div[1]/div/div/div/div[1]/section/main/div/div/div[1]/div[2]/form/div[6]/div/label/input")).click();
 
 
 
@@ -88,7 +91,7 @@ public class LoginLogoutTest {
         // Close the WebDriver
         
 
-   // }
+   }
     }
 
 
