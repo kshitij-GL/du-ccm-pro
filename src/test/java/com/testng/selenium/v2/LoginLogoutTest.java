@@ -18,7 +18,11 @@ public class LoginLogoutTest {
     @BeforeTest
     @Parameters({ "browser" })
     public void setup() {
-        System.setProperty("webdriver.chrome.driver", "/home/server/Downloads/chromedriver_linux64");
+	    System.setProperty("webdriver.chrome.driver", "/usr/local/bin/chromedriver");
+	    //WebDriver driver = new ChromeDriver();
+
+
+    //    System.setProperty("webdriver.chrome.driver", "/home/server/Downloads/chromedriver_linux64");
        // driver = new ChromeDriver();
         ChromeOptions options = new ChromeOptions();
         options.addArguments("--remote-allow-origins=*");
