@@ -21,14 +21,19 @@ public class LoginLogoutTest {
 	    System.setProperty("webdriver.chrome.driver", "/usr/local/bin/chromedriver");
 	    //WebDriver driver = new ChromeDriver();
 
-
-    //    System.setProperty("webdriver.chrome.driver", "/home/server/Downloads/chromedriver_linux64");
-       // driver = new ChromeDriver();
-        ChromeOptions options = new ChromeOptions();
-        options.addArguments("--remote-allow-origins=*");
-        driver = new ChromeDriver(options);
-        driver.manage().window().maximize();
-        driver.get(baseUrl);
+ ChromeOptions handlingSSL = new ChromeOptions();
+	handlingSSL.addArguments("--no-sandbox");
+	 handlingSSL.addArguments("--remote-allow-origins=*");
+		 //Using the accept insecure cert method with true as parameter to accept the untrusted certificate
+		 handlingSSL.setAcceptInsecureCerts(true);
+					
+		//Creating instance of Chrome driver by passing reference of ChromeOptions object
+		driver = new ChromeDriver(handlingSSL);
+      //  ChromeOptions options = new ChromeOptions();
+      //  options.addArguments("--remote-allow-origins=*");
+      //  driver = new ChromeDriver(options);
+       driver.manage().window().maximize();
+      driver.get(baseUrl);
     }
 
     @Test(priority = 1)
