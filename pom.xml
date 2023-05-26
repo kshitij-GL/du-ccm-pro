@@ -10,19 +10,12 @@
   <name>v2</name>
   <url>http://maven.apache.org</url>
 
-<!--  <properties> -->
-   <!-- <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding> -->
-  <!--</properties> -->
-  
   <properties>
-    <maven.compiler.source>1.6</maven.compiler.source>
-    <maven.compiler.target>1.6</maven.compiler.target>
-</properties>
-  
- 
+    <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+  </properties>
 
-  
 
+  <dependencies>
 <!-- https://mvnrepository.com/artifact/org.seleniumhq.selenium/selenium-java -->
 <dependency>
 <groupId>org.seleniumhq.selenium</groupId>
@@ -45,5 +38,8 @@
   			<version>2.20</version>
   		</plugin>
   	</plugins>
+  	
+  	
+  	
   </build>
 </project>
