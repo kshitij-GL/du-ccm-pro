@@ -10,16 +10,16 @@
   <name>v2</name>
   <url>http://maven.apache.org</url>
 
+<!--  <properties> -->
+   <!-- <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding> -->
+  <!--</properties> -->
+  
   <properties>
-    <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-  
-  
-  
     <maven.compiler.source>1.6</maven.compiler.source>
     <maven.compiler.target>1.6</maven.compiler.target>
-  </properties>
+</properties>
   
- <dependencies>
+  <dependencies>
     <!-- https://mvnrepository.com/artifact/org.seleniumhq.selenium/selenium-java -->
     <dependency>
         <groupId>org.seleniumhq.selenium</groupId>
@@ -40,8 +40,21 @@
     </dependency>
 </dependencies>
 
-
-  
+<!--   <dependencies> -->
+<!-- https://mvnrepository.com/artifact/org.seleniumhq.selenium/selenium-java -->
+<!-- <dependency> -->
+<!-- <groupId>org.seleniumhq.selenium</groupId> -->
+<!-- <artifactId>selenium-java</artifactId> -->
+<!-- <version>4.2.1</version> -->
+<!-- </dependency> -->
+<!-- https://mvnrepository.com/artifact/org.testng/testng -->
+<!-- <dependency> -->
+<!-- <groupId>org.testng</groupId> -->
+<!-- <artifactId>testng</artifactId> -->
+<!-- <version>7.6.0</version> -->
+<!-- <scope>test</scope> -->
+<!-- </dependency> -->
+<!-- </dependencies> -->
   <build>
   	<plugins>
   		<plugin>
@@ -50,8 +63,5 @@
   			<version>2.20</version>
   		</plugin>
   	</plugins>
-  	
-  	
-  	
   </build>
 </project>
